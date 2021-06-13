@@ -58,13 +58,29 @@
 			children = (
 				4FCA14942676590400F3FBAB /* AppDelegate.swift */,
 				4FCA14962676590400F3FBAB /* SceneDelegate.swift */,
-				4FCA14982676590400F3FBAB /* ViewController.swift */,
 				4FCA149A2676590400F3FBAB /* Main.storyboard */,
+				4FCA14A92676591700F3FBAB /* ViewControllers */,
+				4FCA14A82676591100F3FBAB /* Assets */,
+			);
+			path = SpacePhoto;
+			sourceTree = "<group>";
+		};
+		4FCA14A82676591100F3FBAB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				4FCA149D2676590400F3FBAB /* Assets.xcassets */,
 				4FCA149F2676590500F3FBAB /* LaunchScreen.storyboard */,
 				4FCA14A22676590500F3FBAB /* Info.plist */,
 			);
-			path = SpacePhoto;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4FCA14A92676591700F3FBAB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA14982676590400F3FBAB /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5UNW2D34P;
-				INFOPLIST_FILE = SpacePhoto/Info.plist;
+				INFOPLIST_FILE = SpacePhoto/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5UNW2D34P;
-				INFOPLIST_FILE = SpacePhoto/Info.plist;
+				INFOPLIST_FILE = SpacePhoto/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
