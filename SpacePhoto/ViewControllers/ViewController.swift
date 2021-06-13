@@ -36,7 +36,10 @@ extension ViewController {
 extension ViewController {
     
     func updateUI(with photoInfo: PhotoInfo) {
-        let task = URLSession.shared.dataTask(with: photoInfo.url, completionHandler: { (data, response, error) in
+        
+        guard let url = photoInfo.url.withHTTPS() else { return }
+        
+        let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
             guard let data = data,
                   let image = UIImage(data: data) else { return }
             DispatchQueue.main.async {
