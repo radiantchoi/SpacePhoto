@@ -8,6 +8,7 @@
 import Foundation
 
 class PhotoInfoController {
+    
     func fetchPhotoInfo(completion: @escaping (PhotoInfo?) -> Void) {
 
         let baseURL = URL(string: "https://api.nasa.gov/planetary/apod")!
@@ -27,7 +28,6 @@ class PhotoInfoController {
                 completion(nil)
             }
         }
-
         task.resume()
     }
 }
